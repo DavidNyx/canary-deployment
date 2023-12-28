@@ -215,7 +215,7 @@ resource "aws_autoscaling_group" "canary_asg_1" {
 
   launch_template {
     id      = aws_launch_template.canary_launch_template_1.id
-    version = aws_launch_template.canary_launch_template_2.latest_version
+    version = aws_launch_template.canary_launch_template_1.latest_version
   }
 
   tag {
